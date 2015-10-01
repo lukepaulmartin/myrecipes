@@ -4,6 +4,9 @@ Rails.application.routes.draw do
   
   get '/home', to: 'pages#home'
   
+  resources :chefs, except: [:new]
+  get '/register/', to: 'chefs#new'
+  
   resources :recipes do
     member do
       post 'like'
