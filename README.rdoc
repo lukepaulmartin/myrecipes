@@ -18,17 +18,20 @@ What we need to do:
 
 Authentication Updates:
 
-1) Show Recipe page -> Ability to Edit/Update only own recipe
-2) Navigation Partial -> Toggle menu, restrict new
-3) Restrict Thumbs up/down to logged in users only
-4) Recipe - Update to current_user
-5) Like - Update to current_user
-6) Before_action :require_user, except [:show, :index]
-7) Before_action :require_same_user for chefs, only [:edit, :update]
+- Show Recipe page -> Ability to Edit/Update only own recipe
+- Navigation Partial -> Toggle menu, restrict new
+- Restrict Thumbs up/down to logged in users only
+- Recipe - Update to current_user
+- Like - Update to current_user
+- Before_action :require_user, except [:show, :index]
+- Before_action :require_same_user for chefs, only [:edit, :update]
 
 Many to Many Association
 
-1) We will implement using has_many through association
-2) Requires a join table
-3) One object/row in one table can be associated with multiple rows in a 2nd table and vice-versa
+- We will implement using has_many through association
+- Requires a join table
+- One object/row in one table can be associated with multiple rows in a 2nd table and vice-versa
 
+Admin Functionality:
+
+- Allow admins to Edit any Recipe
